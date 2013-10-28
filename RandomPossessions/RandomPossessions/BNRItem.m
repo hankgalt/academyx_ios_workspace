@@ -25,11 +25,11 @@
   
   int randomValue = rand() % 100;
   
-  NSString *randomSerialNumber = [NSString stringWithFormat:@"%c%c%c%c%c%c", '0' + rand() % 10,
+  NSString *randomSerialNumber = [NSString stringWithFormat:@"%c%c%c%c%c", '0' + rand() % 10,
                                   'A' + rand() % 26,
                                   '0' + rand() % 10,
                                   'A' + rand() % 26,
-                                  '0' + rand() %10];
+                                  '0' + rand() % 10];
   
   BNRItem *newItem = [[self alloc] initWithItemName:randomName valueInDollars:randomValue serialNumber:randomSerialNumber];
   
