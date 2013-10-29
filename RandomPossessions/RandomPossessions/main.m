@@ -21,8 +21,12 @@ int main(int argc, const char * argv[])
       [items addObject:p];
     }
     
-    for (int i = 0; i < [items count]; i++) {
-      NSLog(@"%@", [items objectAtIndex:i]);
+//    for (int i = 0; i < [items count]; i++) {
+//      NSLog(@"%@", [items objectAtIndex:i]);
+//    }
+    
+    for (BNRItem *item in items) {
+      NSLog(@"%@", item);
     }
 
     items = nil;
